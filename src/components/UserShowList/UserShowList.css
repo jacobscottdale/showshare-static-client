@@ -1,0 +1,11 @@
+.TVShow_list ul {
+  display: flex;
+  min-height: 405px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.TVShow_list li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
