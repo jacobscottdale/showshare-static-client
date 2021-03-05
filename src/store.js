@@ -148,42 +148,6 @@ const searchResults = [
     },
     title: "Game of Thrones",
     year: 2011
-  },
-  {
-    ids: {
-      imdb: "tt2946308",
-      slug: "gay-of-thrones",
-      tmdb: 66901,
-      trakt: 108159,
-      tvdb: 312618,
-      tvrage: null,
-    },
-    title: "Gay of Thrones",
-    year: 2013
-  },
-  {
-    ids: {
-      imdb: "tt5665732",
-      slug: "after-the-thrones",
-      tmdb: 66346,
-      trakt: 106908,
-      tvdb: 309875,
-      tvrage: null
-    },
-    title: "After the Thrones",
-    year: 2016
-  },
-  {
-    ids: {
-      imdb: "tt8146868",
-      slug: "the-real-war-of-thrones",
-      tmdb: 77909,
-      trakt: 128598,
-      tvdb: 343846,
-      tvrage: null
-    },
-    title: "The Real War of Thrones",
-    year: 2018
   }
 ];
 

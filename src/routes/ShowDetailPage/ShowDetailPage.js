@@ -3,7 +3,7 @@ import AddButton from 'components/AddButton/AddButton';
 import NavBar from 'components/NavBar/NavBar';
 import UserContext from 'UserContext';
 import 'routes/ShowDetailPage/ShowDetailPage.css';
-import { showDetail } from 'store'
+import { showDetail } from 'store';
 
 // Every shows detail page displays Game of Thrones details for the sake of not seeding every show's details for the static app
 
@@ -16,7 +16,16 @@ class ShowDetailPage extends Component {
   static contextType = UserContext;
 
   updateShowState = () => {
-          
+    const showInList = this.context.userShows.find(userShow => userShow.trakt_id === this.state.show.trakt_id);
+    if (showInList) {
+      this.setState({
+        watch_status: showInList.watch_status
+      });
+    } else {
+      this.setState({
+        watch_status: ''
+      });
+    }
   };
 
   componentDidMount() {
@@ -37,7 +46,7 @@ class ShowDetailPage extends Component {
   render() {
     const { trakt_id, aired_episodes, network, title, overview, status, year, imdb_id } = this.state.show;
     const imdbLink = `https://www.imdb.com/title/${imdb_id}/`;
-    
+
     return (
       <>
         <NavBar history={this.props.history} />

@@ -8,6 +8,7 @@ import { searchResults } from 'store'
 
 // SearchPage only contains static data. No user input accepted.
 // Displays same list of static search results
+// Will be pulling from 3rd party API as well as my own
 
 class SearchPage extends Component {
   state = {

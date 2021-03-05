@@ -21,6 +21,25 @@ class App extends Component {
     });
   };
 
+  setWatchStatus = (trakt_id, watch_status, updateState) => {
+    let newState = this.state.userShows.map(show => {
+      if (show.trakt_id === trakt_id) {
+        show.watch_status = watch_status
+      }
+      return show
+    }).filter(show => show)
+    this.setState({
+      userShows: newState
+    })
+    updateState()
+  }
+
+  redirectToLogin = () => {
+    const { history } = this.props;
+    if (history)
+      history.push('/login');
+  };
+
   componentDidMount() {
     this.storeUserShows(userShows);
   }
@@ -28,6 +47,9 @@ class App extends Component {
   render() {
     const contextValue = {
       userShows: this.state.userShows,
+      storeUserShows: this.storeUserShows,
+      redirectToLogin: this.redirectToLogin,
+      setWatchStatus: this.setWatchStatus,
     };
 
     return (

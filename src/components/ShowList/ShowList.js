@@ -1,6 +1,8 @@
 import React from 'react';
 import ShowItem from 'components/ShowItem/ShowItem';
 
+// Displays same list of static search results
+
 function ShowList(props) {
   const shows = props.shows.map(show =>
     <li key={show.ids.trakt}>
