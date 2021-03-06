@@ -19,7 +19,7 @@ class NavBar extends Component {
 
   renderLoginButton() {
     return (
-      <li>
+      <li className='nav-button'>
         <button
           onClick={() => this.props.history.push('/login')}
           className='log_button login'
@@ -32,7 +32,7 @@ class NavBar extends Component {
 
   renderLogoutButton() {
     return (
-      <li>
+      <li className='nav-button'>
         <button
           onClick={() => this.handleLogout()}
           className='log_button logout'
@@ -47,14 +47,14 @@ class NavBar extends Component {
     return (
       <header className='NavBar'>
         <Link to='/'>
-          <div><h1>showshare</h1></div>
+          <div className='title-container'><h1>showshare</h1></div>
         </Link>
         <nav>
           <ul>
-            <li>
+            <li className='nav-search'>
               <Link to='/search'>search</Link>
             </li>
-            <li>
+            <li className='nav-user-watchlist'>
               <Link to='/watchlist'>
                 Test User's watchlist
                   </Link>

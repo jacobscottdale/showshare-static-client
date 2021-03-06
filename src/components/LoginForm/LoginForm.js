@@ -29,17 +29,17 @@ class LoginForm extends Component {
             name='username'
             type='text'
             autoComplete='username'
-            required /><br />
+            required />
           <label htmlFor='password'>Password:</label>
           <input
             id='password'
             name='password'
             type='password'
             autoComplete='current-password'
-            required /><br />
+            required />
           <button type='submit'>
             Log In
-          </button><br />
+          </button>
           <span className='form-error'>{this.state.error}</span>
         </form>
         <p>Or make a <Link to='/register' >New Account</Link></p>

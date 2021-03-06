@@ -7,14 +7,18 @@ class SearchBar extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    this.props.handleSearch()
   };
 
   render() {
     return (
       <form id='find-show' onSubmit={this.handleSubmit}>
-        <label htmlFor='show-search'>Find show:</label>
-        <input id='show-search' name='show-search' type='text' />
-        <button type='submit' >Search</button>
+        <div className='Search'>
+          <label htmlFor='show-search'>Find show:</label>
+          <input id='show-search' name='show-search' type='text' />
+          <button type='submit' >Search</button>
+        </div>
+        
       </form>
     );
   }

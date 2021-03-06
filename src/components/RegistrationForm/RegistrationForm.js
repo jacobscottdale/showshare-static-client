@@ -29,21 +29,21 @@ class RegistrationForm extends Component {
             name='first_name'
             type='text'
             autoComplete='given-name'
-            required /><br />
+            required />
           <label htmlFor='last_name'>Last Name:</label>
           <input
             id='last_name'
             name='last_name'
             type='text'
             autoComplete='family-name'
-            required /><br />
+            required />
           <label htmlFor='username'>Username:</label>
           <input
             id='username'
             name='username'
             type='text'
             autoComplete='off'
-            required /><span className='form-error'>{this.state.error}</span><br />
+            required /><span className='form-error'>{this.state.error}</span>
           <label htmlFor='password'>Password:</label>
           <input
             id='password'
@@ -52,7 +52,7 @@ class RegistrationForm extends Component {
             autoComplete='off'
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-            required /><br />
+            required />
           <button type='submit'>
             Register
             </button>

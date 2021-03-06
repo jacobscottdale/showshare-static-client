@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LoginForm from 'components/LoginForm/LoginForm';
 import NavBar from 'components/NavBar/NavBar';
+import 'routes/LoginPage/LoginPage.css'
 
 // For the static app, Login and Registration will only redirect user to Watchlist once the fields contain valid input
 

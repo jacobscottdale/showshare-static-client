@@ -1,5 +1,6 @@
 import React from 'react';
 import ShowItem from 'components/ShowItem/ShowItem';
+import 'components/ShowList/ShowList.css'
 
 // Displays same list of static search results
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from 'components/NavBar/NavBar';
 import RegistrationForm from 'components/RegistrationForm/RegistrationForm';
+import 'routes/RegistrationPage/RegistrationPage.css'
 
 // For the static app, Login and Registration will only redirect user to Watchlist once the fields contain valid input
 
@@ -21,7 +22,7 @@ class RegistrationPage extends Component {
       <>
         <NavBar history={this.props.history} />
         <section className='RegistrationPage'>
-          <h2>Register</h2>
+          <h2>Register a New Account</h2>
           <RegistrationForm
             onRegistrationSuccess={this.handleRegistrationSuccess}
           />
